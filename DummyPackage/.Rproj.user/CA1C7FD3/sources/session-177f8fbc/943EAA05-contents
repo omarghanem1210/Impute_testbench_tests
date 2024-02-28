@@ -1,0 +1,45 @@
+# Hello, world!
+#
+# This is an example function named 'hello'
+# which prints 'Hello, world!'.
+#
+# You can learn more about package authoring with RStudio at:
+#
+#   http://r-pkgs.had.co.nz/
+#
+# Some useful keyboard shortcuts for package authoring:
+#
+#   Install Package:           'Ctrl + Shift + B'
+#   Check Package:             'Ctrl + Shift + E'
+#   Test Package:              'Ctrl + Shift + T'
+
+hello <- function() {
+  print("Hello, world!")
+}
+
+dpareto <- function(x, scale, shape){
+  if(x < scale){
+    return(0)
+  }
+
+  return((shape * scale*shape) / x**(shape+1))
+
+}
+
+ppareto <- function(q, scale, shape){
+  if(q < scale){
+    return(0)
+  }
+  return(1 - (scale / q)**shape)
+}
+
+qpareto <- function(p, scale, shape){
+  return(scale * (1 - p)**(-1/shape))
+}
+
+rpareto <- function(n, scale, shape){
+  uniform_random_numbers <- runif(n)
+  return(qpareto(uniform_random_numbers, scale, shape))
+}
+
+

@@ -1,0 +1,12 @@
+---
+title: "Second Test"
+output: pdf_document
+---
+
+## Suggestions:
+
+The simplest possible updates are to update all the current functions in the package to work with dataframes that represents multivariate time series.
+
+A good new feature, in my opinion, is to implement Generative Adversarial Network for Multivariate Time Series Imputation, which is the current state of the art as described in the papers "E2GAN: End-to-End Generative Adversarial Network
+for Multivariate Time Series Imputation" and "Missing value imputation in multivariate time series with end-to-end generative adversarial networks". For this we might have to add the R library Torch as a dependency.
+

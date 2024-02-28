@@ -1,0 +1,42 @@
+---
+title: "First test"
+output: pdf_document
+date: "2024-02-28"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+I will demonstrated the use of imputeTestbench package by using it on the Mauna Loa Atmospheric CO2 Concentration dataset. My demonstration is based upon the same one done in the paper "R Package imputeTestbench to Compare
+Imputation Methods for Univariate Time Series"
+
+```{r cars}
+library(imputeTestbench)
+
+```
+
+```{r}
+set.seed(44)
+plot(co2)
+```
+
+
+```{r}
+missing_simulation <-  impute_errors(dataIn = co2)
+missing_simulation
+```
+Having created an errprof object, I can now visualize the rmse errors of each imputation method.
+
+```{r}
+plot_errors(missing_simulation)
+```
+Instead of showing the errors as box plots, lets show the average error as a line plot.
+
+```{r}
+plot_errors(missing_simulation, plotType = 'line')
+
+```
+

@@ -1,0 +1,7 @@
+\name{qpareto}
+\alias{qpareto}
+\title{pareto quantile function}
+
+\description{
+Evaluates the quantile function fo the pareto distribution
+}

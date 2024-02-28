@@ -1,0 +1,26 @@
+{
+    "id": "943EAA05",
+    "path": "D:/Projects/Data_Science_Projects/Impute_testbench_tests/DummyPackage/R/hello.R",
+    "project_path": "R/hello.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1709134059773.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "37,1",
+        "scrollLine": "16"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1709139239,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1709139239323,
+    "read_only": false,
+    "read_only_alternatives": []
+}

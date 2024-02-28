@@ -1,0 +1,8 @@
+\name{rpareto}
+\alias{rpareto}
+\title{pareto random number generator}
+
+\description{
+Generates random numbers that are pareto distributed
+}
+
